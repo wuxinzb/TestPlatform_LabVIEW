@@ -1,0 +1,47 @@
+<?xml>
+<system>
+    <software_info>
+        <version>1.0.0</version>
+        <date>2013-06-30</date>
+        <description>add system.ini</description>
+        <email>zb587220@gmail.com</email>
+    </software_info>
+    <support>
+        <communication>
+            <type>COM</type>
+            <type>CAN</type>
+            <type>SPI</type>
+        </communication>
+        <hardware_driver>
+            <hardware>
+                <name>AC Source</name>
+                <vender>Chrome</vender>
+                <driver>
+                    <type>GPIB</type>
+                </driver>
+            </hardware>
+            <hardware>
+                <name>DMM</name>
+                <vender>Agilent</vender>
+                <driver>
+                    <type>TCP/IP</type>
+                    <type>GPIB</type>
+                    <type>RS232</type>
+                </driver>
+            </hardware>
+        </hardware_driver>
+        <gpio_control>
+            <ttl></ttl>
+            <decouping></decoupling>
+            <pwm></pwm>
+            <count></count>
+        </gpio_control>
+    </support>
+    <interface>
+        <refresh_rate unit="ms">
+            <quick>20</quick>
+            <normal>100</normal>
+            <slow>500</slow>
+        </refresh_rate>
+    </interface>
+</system>

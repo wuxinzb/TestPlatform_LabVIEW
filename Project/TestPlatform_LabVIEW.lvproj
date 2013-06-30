@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="12008004">
-	<Property Name="CCSymbols" Type="Str"></Property>
+	<Property Name="CCSymbols" Type="Str">Debug,True;</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -14,41 +14,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Global Variants" Type="Folder">
-			<Item Name="FGV Config.vi" Type="VI" URL="../Global Variants/FGV Config.vi"/>
-			<Item Name="FGV Template.vit" Type="VI" URL="../Global Variants/FGV Template.vit"/>
-			<Item Name="TP_FGV_Config.vi" Type="VI" URL="../Global Variants/TP_FGV_Config.vi"/>
-			<Item Name="TP_FGV_Log.vi" Type="VI" URL="../Global Variants/TP_FGV_Log.vi"/>
-			<Item Name="TP_FGV_UI_Ref.vi" Type="VI" URL="../Global Variants/TP_FGV_UI_Ref.vi"/>
-			<Item Name="TP_GV_UI_Ref.vi" Type="VI" URL="../Global Variants/TP_GV_UI_Ref.vi"/>
-			<Item Name="TP_OP_Queue.vi" Type="VI" URL="../Global Variants/TP_OP_Queue.vi"/>
-		</Item>
-		<Item Name="Project Documentation" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
-		</Item>
-		<Item Name="Support VIs" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="TP_Privileges.vi" Type="VI" URL="../controls/TP_Privileges.vi"/>
-			<Item Name="TP_Enqueue.vi" Type="VI" URL="../controls/TP_Enqueue.vi"/>
-		</Item>
-		<Item Name="TestScript" Type="Folder">
-			<Item Name="example.txt" Type="Document" URL="../TestScript/example.txt"/>
-		</Item>
-		<Item Name="Type Definitions" Type="Folder">
-			<Item Name="TP_Config.ctl" Type="VI" URL="../controls/TP_Config.ctl"/>
-			<Item Name="TP_Message data.ctl" Type="VI" URL="../controls/TP_Message data.ctl"/>
-			<Item Name="TP_Privileges.ctl" Type="VI" URL="../controls/TP_Privileges.ctl"/>
-			<Item Name="TP_UI Data.ctl" Type="VI" URL="../controls/TP_UI Data.ctl"/>
-			<Item Name="TP_UI Ref.ctl" Type="VI" URL="../controls/TP_UI Ref.ctl"/>
-		</Item>
-		<Item Name="VIs" Type="Folder" URL="../VIs">
+		<Item Name="Project" Type="Folder" URL="..">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="readme.txt" Type="Document" URL="../readme.txt"/>
-		<Item Name="TestPlatform.ini" Type="Document" URL="../TestPlatform.ini"/>
-		<Item Name="TP_Main.vi" Type="VI" URL="../TP_Main.vi"/>
-		<Item Name="UI.rtm" Type="Document" URL="../UI.rtm"/>
-		<Item Name="xml example.vi" Type="VI" URL="../documentation/xml example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -113,13 +81,12 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_XML.lvlib" Type="Library" URL="/&lt;vilib&gt;/xml/NI_XML.lvlib"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="subDisplayMessage.vi" Type="VI" URL="/&lt;vilib&gt;/express/express output/DisplayMessageBlock.llb/subDisplayMessage.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
-				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="NI_XML.lvlib" Type="Library" URL="/&lt;vilib&gt;/xml/NI_XML.lvlib"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -147,18 +114,18 @@
 				<Property Name="Destination[2].destName" Type="Str">VIs</Property>
 				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/Main Application/VIs</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3A2455D0-3D6F-4E13-B298-09326A6CB006}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6259B643-8572-4AD4-B5DF-3212D5D487A4}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TP_Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Project/TP_Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/VIs/TP_Module.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Project/VIs/TP_Module.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/VIs/TP_UI.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Project/VIs/TP_UI.vi</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
